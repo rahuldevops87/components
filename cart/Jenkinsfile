@@ -1,8 +1,13 @@
+@Library('my-shared-library@main')
+
 pipeline {
     agent any
     stages {
         stage ('Lint Check') {
-            Step {
+            steps {
+                script {
+                    sample.info(Best)
+                }
                 sh "echo Link Check running"
             }
         }
