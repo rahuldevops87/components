@@ -8,7 +8,6 @@ pipeline {
                 script {
                     sample.info(Best)
                 }
-                sh "echo Link Check running"
             }
         }
     }
